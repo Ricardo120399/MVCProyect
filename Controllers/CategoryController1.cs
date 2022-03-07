@@ -27,9 +27,10 @@ namespace BulkyBookWeb.Controllers
 
         /*
         //Post
+        */
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(CategoryController1 obj)
+        public IActionResult Create(Models.CategoryController1 obj)
         {
             if(obj.Name == obj.DisplayOrder.ToString())
             {
@@ -45,7 +46,6 @@ namespace BulkyBookWeb.Controllers
             return View(obj);
             
         }
-        */
 
         //GET
         public IActionResult Edit(int? id)
@@ -68,9 +68,10 @@ namespace BulkyBookWeb.Controllers
 
         /*
         //Post
+        */
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(CategoryController1 obj)
+        public IActionResult Edit(Models.CategoryController1 obj)
         {
             if(obj.Name == obj.DisplayOrder.ToString())
             {
@@ -86,7 +87,6 @@ namespace BulkyBookWeb.Controllers
             return View(obj);
             
         }
-        */
 
         //GET
         public IActionResult Delete(int? id)
